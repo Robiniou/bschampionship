@@ -1,0 +1,373 @@
+@font-face{
+    font-family: "BS";
+    src: url("../font/brawlstars.ttf");
+}
+
+*{
+    font-family: BS;
+}
+
+a:link{
+    text-decoration:none;
+    opacity: 1;
+    color: white;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+}
+
+header.header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 25px;
+    height: 110px;
+    background-color: darkblue;
+}
+
+header.header img{
+    width: 75px;
+}
+
+nav.nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 20px;
+}
+
+nav.nav li{
+    color: white;
+    font-size: 200%;
+    margin: 20px;
+    text-align: center;
+    opacity: 0.60;
+    transition:opacity .8s;
+    text-decoration: none;
+}
+
+nav.nav li:hover{
+    opacity: 1;
+    background-size: 100%;
+}
+
+.header:hover{
+    cursor: pointer;
+}
+
+.logo{
+    width: 150px;
+    height: 140px;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    transition:width .2s;
+}
+
+.logo:hover{
+    width: 160px;
+    height: 160px;
+}
+
+.gem{
+   width: 40px;
+}
+
+.credits{
+    display: flex;
+    width: 250px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credits img:hover{
+    width:90px;
+}
+
+.credits img{
+    max-width: 100%;
+    transition: width .5s;
+}
+
+/* Corps du site*/
+
+corps{
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leaderboards{
+    width:300px;
+    height:fit-content;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboards tete{
+    text-align: center;
+    font-size: 200%;
+}
+
+.leaderboards classement{
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+    margin: 20px;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-image: url("../images/sandy.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.leaderboards classement li{
+    display:flex;
+    color: black;
+    font-weight: bold;
+    font-size: 150%;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+/* bracket */
+
+.bracket{
+    display: flex;
+    flex-direction: column;
+}
+
+.bracket titre{
+    text-align: center;
+    font-size: 200%;
+}
+
+.tableau{
+    margin: 10px;
+    display: grid;
+    border: 1px solid black;
+    background-image: url("../images/bracket.png");
+    background-size: cover;
+    background-size: cover;
+    height: 440px;
+    width: 800px;
+    padding: 20px;
+}
+
+.mode{
+    margin-right: 4px;
+}
+
+.lastmode{
+    opacity: 0;
+}
+
+.modes{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 7px;
+}
+
+.team1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.team2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modes img{
+    width: 10px;
+}
+
+.scoreboard{
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.scoreboard2{
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.scoreboard3{
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.scoreboard4{
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.scoreboard5{
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.scoreboard6{
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.scoreboard7{
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 6;
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.playbutton img{
+    width: 70px;
+    margin-right: 0;
+}
+
+.playbutton:hover{
+    cursor: pointer;
+}
+
+.q1{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 60px;
+}
+
+.q2{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 60px;
+}
+
+.q3{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 60px;
+}
+
+.q4{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 60px;
+}
+
+.d1{
+    width: 200px;
+    height: 70px;
+}
+
+.d2{
+    width: 200px;
+    height: 70px;
+}
+
+.f{
+    width: 200px;
+    height: 70px;
+}
+
+/* points gagnés */
+
+.pointsearned{
+    width:300px;
+    height:fit-content;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pointsearned titre{
+    text-align: center;
+    font-size: 200%;
+}
+
+.pointsearned classement{
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+    margin: 20px;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-image: url("../images/max.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.pointsearned classement li{
+    display: flex;
+    color: black;
+    font-weight: bold;
+    font-size: 150%;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.regions{
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+   justify-content: space-between;
+}
+
+.months{
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+   justify-content: space-between;
+}
+
+b{
+    color: black;
+    font-size: 120%;
+}
+
+nav.nav li.region4{
+    opacity: 1;
+}
+
+

@@ -1,0 +1,126 @@
+@font-face{
+    font-family: "BS";
+    src: url("../font/brawlstars.ttf");
+}
+
+*{
+    font-family: BS;
+}
+
+a:link{
+    text-decoration:none;
+    color: white;
+    opacity: 1;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+}
+
+header.header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 25px;
+    height: 110px;
+    background-color: darkblue;
+}
+
+header.header img{
+    width: 75px;
+}
+
+nav.nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 20px;
+}
+
+nav.nav li{
+    color: white;
+    font-size: 200%;
+    margin: 20px;
+    text-align: center;
+    opacity: 0.60;
+    transition:opacity .8s;
+    text-decoration: none;
+}
+
+nav.nav li:hover{
+    opacity: 1;
+    background-size: 100%;
+}
+
+.header:hover{
+    cursor: pointer;
+}
+
+.logo{
+    width: 150px;
+    height: 140px;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    transition:width .2s;
+}
+
+.logo:hover{
+    width: 160px;
+    height: 160px;
+}
+
+.gem{
+   width: 40px;
+}
+
+.credits{
+    display: flex;
+    width: 250px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credits img:hover{
+    width:90px;
+}
+
+.credits img{
+    max-width: 100%;
+    transition: width .5s;
+}
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:xx-large;
+    margin:40px;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.message{
+    text-align: center;
+}
+
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+warning{
+    animation:blink 1s infinite;
+}
+
+
+
+
